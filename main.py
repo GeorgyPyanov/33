@@ -17,7 +17,7 @@ class MyWidget(QMainWindow):
         self.paint = QPainter()
         self.paint.begin(self)
         a123 = choice(range(100))
-        self.paint.setBrush(QColor(255, 255, 0))
+        self.paint.setBrush(QColor(choice(range(255)), choice(range(255)), choice(range(255))))
         self.paint.drawEllipse(QPoint(600, 300), a123, a123)
         self.paint.end()
 
